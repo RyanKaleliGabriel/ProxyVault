@@ -68,8 +68,6 @@ You should also provide a way to clear the cache by running a command like follo
    cd ProxyVault.git
    ```
 
-````
-
 2. Set Environment Variables: The github API requires authentication for certain request. To avoid rate limits, you can use a personal Github access token. Create a .env file and add the your access token.
 
    ```bash
@@ -160,4 +158,4 @@ Data or web page will be displayed in json on http://localhost:3000 where the ca
 ## Project URL
 
 https://roadmap.sh/projects/caching-server
-````
+
