@@ -7,5 +7,19 @@ services:
     volumes:
       - redis_data:/redis_data
 
+  app:
+    build: ./
+    container_name: app_service
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    volumes:
+      - ./app:/app
+    command: npm start
+
 volumes:
   redis_data:

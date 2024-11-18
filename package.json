@@ -4,6 +4,8 @@
   "description": "A CLI caching server that caches responses from other servers.",
   "main": "index.js",
   "scripts": {
+    "start": "tsc && node dist/caching-proxy.js --port 3000 --origin https://dummyjson.com/products",
+    "clear-cache": "tsc && node dist/caching-proxy.js --clear-cache",
     "test": "npm test"
   },
   "repository": {

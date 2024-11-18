@@ -12,13 +12,13 @@ export const argv = yargs
     alias: "p",
     type: "number",
     description: "Port to run the caching proxy server",
-    demandOption: true,
+    demandOption: false,
   })
   .option("origin", {
     alias: "o",
     type: "string",
     description: "The URL of the origin server to forward requests to",
-    demandOption: true,
+    demandOption: false,
   })
   .option("clear-cache", {
     alias: "cc",
