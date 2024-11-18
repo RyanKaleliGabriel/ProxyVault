@@ -1,4 +1,4 @@
-# GitHub User Activity Command Line Interface
+# Caching Proxy
 
 > This is a command line interface(CLI) tool that starts caching proxy server, it forwards requests tot he actual server and caches the responses. If the same request is made again, it will return the cahed response instead of forwarding the request to the server.
 
